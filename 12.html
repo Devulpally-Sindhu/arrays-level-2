@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //remove duplicate elments in the array.
+
+        var ar=[23,34,54,10,4,7,6,23,10];
+        
+        //1st method
+
+        // var br=ar.filter(function(a,i){
+        //     return ar.indexOf(a)===i;
+        // })
+        // console.log(br)
+
+        // 2nd method
+
+        // var br=[...new Set(ar)];
+        // console.log(br)
+
+        // 3rd method
+
+        var br=[];
+        ar.forEach(a=>{
+            if(!br.includes(a)){
+                br.push(a)
+            }
+        })
+        console.log(br)
+
+        
+
+    </script>
+</body>
+</html>
